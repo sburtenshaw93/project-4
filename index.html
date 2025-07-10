@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link id="main-style" rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/theme.css" id="theme-style">
+  <script src="main.js" defer></script>
+  <script src="https://kit.fontawesome.com/0059a438a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <figure class="logo">
+            <img src="images/logo.png" alt="Tic-Tac-Toe Logo">
+            <figcaption>Tic-Tac-Toe</figcaption>
+        </figure>
+        <span class="filler"></span>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('game')">Game</a></li>
+            </ul>
+        </nav>
+        <button class="darkmode" onclick="toggleThemeSheet()">Dark Mode</button>
+    </header>
+
+    <main>
+
+      <div class="content">
+        <section id="home">
+            <h2>Welcome</h2>
+            <p class="home">This site lets you play Tic-Tac-Toe! Click on the Game link to start playing</p>
+            <iframe width="520" height="415"
+                src="https://www.youtube.com/embed/QNFQvX-MQgI"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <h3> 
+              <ul>--SELF GRADE--</ul>
+              <ul>REFACTOR CSS-FIX: A</ul>
+              <ul>CSS THEME: A</ul>
+              <ul>CSS THEME TOGGLE: A</ul>
+              <ul>MOBILE RESPONSIVE: B</ul>
+              <ul>COMMENTS: I had trouble with the mobile response</ul>
+            </h3>
+        </section>
+
+        <section id="game">
+          <h2>Play Game</h2>
+          <div class="board">
+            <div class="tile" onclick="makeMove(this, 0)"></div>
+            <div class="tile" onclick="makeMove(this, 1)"></div>
+            <div class="tile" onclick="makeMove(this, 2)"></div>
+            <div class="tile" onclick="makeMove(this, 3)"></div>
+            <div class="tile" onclick="makeMove(this, 4)"></div>
+            <div class="tile" onclick="makeMove(this, 5)"></div>
+            <div class="tile" onclick="makeMove(this, 6)"></div>
+            <div class="tile" onclick="makeMove(this, 7)"></div>
+            <div class="tile" onclick="makeMove(this, 8)"></div>
+          </div>
+          <p class="winner" id="winner"></p>
+          <button class="reset" onclick="resetGame()">Reset Game</button>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p class="email">Email: 10694227@uvu.edu</p>
+          <i class="fa-brands fa-pagelines"></i>
+          <i class="fa-brands fa-pagelines"></i>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sarah's Projects</p>
+    </footer>
+  </div>
+</body>
+</html>

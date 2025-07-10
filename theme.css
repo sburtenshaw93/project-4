@@ -1,0 +1,53 @@
+/* Project 4 - Theme stylesheet: Dark Mode */
+
+body {
+  background: #121212 !important;
+  color: #e0e0e0 !important;
+  font-family: Arial, serif !important;
+}
+
+header, footer {
+  background-color: #1f1f1f !important;
+  color: white !important;
+  font-family: Arial, serif !important;
+}
+
+main {
+  background-color: transparent !important;
+  font-family: Arial, serif !important;
+}
+
+.tile {
+  background-color: #333 !important;
+  color: white !important;
+  border: 2px solid white !important;
+  font-family: Arial, serif !important;
+}
+
+button, .reset, .darkmode {
+  background-color: white !important;
+  color: #000 !important;
+  font-family: Arial, serif !important;
+}
+
+nav a {
+  color: white !important;
+  font-family: Arial, serif !important;
+}
+
+h2 {
+  color: white !important;
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, serif !important;
+}
+
+.logo figcaption {
+  color: white !important;
+  font-family: Arial, serif !important;
+}
+
+.email, .home, .winner {
+  color: white !important;
+  font-family: Arial, serif !important;
+}
